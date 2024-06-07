@@ -1,0 +1,65 @@
+/* Slider.css */
+body {
+    font-family: Arial, sans-serif;
+}
+.slider-container {
+    text-align: center;
+}
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 100%;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.prev:disabled, .next:disabled {
+    background-color: rgba(0,0,0,0.2);
+    cursor: not-allowed;
+}
+.thumbnail-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.thumbnail img {
+    width: 100px;
+    height: 75px;
+    transition: transform 0.3s;
+}
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+.thumbnail.active img {
+    border: 2px solid red;
+}

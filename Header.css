@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  .header-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+  .header .highlight {
+    color: red;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color:red;
+  }
+  
+  .btn.primary {
+    background-color: red;
+    color: white;
+  }
+  
+  
